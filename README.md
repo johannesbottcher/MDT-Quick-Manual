@@ -1,20 +1,23 @@
-# Masters-Doctoral-Thesis-Template
+# Masters-Doctoral-Thesis-Template -- unofficial usage guide
 
 A bit of information about the Masters-Doctoral-Thesis-Template
-(from now on called MDT), version 2.4. This is no official guide.
+(from now on called MDT), version 2.4 (2016/11/22).  
+ This is no official guide.
 
 ## What is this template? 
 
-MDT  is a basic skeleton for writing a thesis document or
-scientific report. I predefines a few commands that some might
-consider useful. 
+MDT is a basic skeleton for writing a thesis document or
+scientific report. It predefines a few commands and environments
+that some might consider useful. 
 
-## What do i need to know to use the template? 
+## What do I need to know to use the template? 
 
-You need to have a basic knowledge of LaTeX. The class is based
-on the standard LaTeX class `book`.
+MDT  basically just defines the layout of the document.  You need
+to have a basic knowledge<sup>1</sup> of LaTeX to write your report. MDT  is
+based on the standard LaTeX class `book` and is therefore typeset
+in `twoside` mode.
 
-## Options of the class
+## MDT options
 
 - `consistentlayout`   
 The template set the pages for abstract, declaration and others
@@ -54,38 +57,31 @@ package `hyperref` should be loaded last. Use that option to
 prevent the class from loading the package, giving you full
 control about the time to load the package.
 
-Options that are not handled by the class are forwarded to the
-packages. `headsepline`, the language options or the spacing
-options are some of them. 
+## Options to be passed down further
 
-## Changing chapter titles
+Options that are not handled by the class directly  are passed
+down to the already loaded package packages (see below)
 
-A few commands are available to change the appearance of chapter
-titles.
+- `headsepline` is passed to package scrlayer-scrpage, it sets a
+  thin line between the running header and the text of your
+document. Alternatively, you can have such a line between text
+and footer with `footsepline`, but the footer is empty by
+default. 
 
-`\abovechapterskip` The spacing above the chapter  
-`\chapterbelowskip` The spacing below the chapter  
-`\chapterinbetweenskip` The spacing between  the chapter lines  
-`\chapteralign` Alignment of the chapter  
-`chapterfont` The font of the chapter  
-`chapterprefixfont` The font of the chapter prefix  
-`\autodot`   
-`\mdtChapapp`  
+- `english` or `ngerman` is passed down to package `babel`.
+  `babel` takes care of proper hyphenation. The language you use
+also changes predefined strings (for example *Contents* in
+english and *Inhaltsverzeichnis* in german).
 
-If you don't know how to customize the output yourself, have a
-look at the support section below. 
-
-If you need more than the given features, have a look at package
-`titlesec`.
-
-## Dealing with unnumbered chapters and sections
-
-The template provides `addchap*{The title of your unnumbered
-chapter}` to typeset unnumbered chapters. If you want an
-additional entry in the table of contents, remove the asterisk.
+- `oneside` is one of the options of standard LaTeX classes. The
+  default for the book class is typesetting in `twoside` mode,
+that means if you open your printed report, left and right hand
+pages have ink on them.  If you want only right hand pages to
+have text (so the back of every page is empty after printing),
+remove the comment character.
 
 
-## standard packages
+## standard packages used by MDT
 
 Packages `inputenc` and `fontenc` are important when compiling
 with pdfTeX. If you need to compile with another engine, you need
@@ -106,19 +102,75 @@ Package `scrlayer-scrpage` is used to define the headers and
 footers. If you need to change them, have a look at the
 KOMA-script documentation.
 
-## I want to change the title page?
+## Dealing with unnumbered chapters and sections
+
+The template provides `addchap*{The title of your unnumbered
+chapter}` to typeset unnumbered chapters. If you want an
+additional entry in the table of contents, remove the asterisk.  
+The same mechanism is provided for sections: `\addsec{Title}`
+adds an unnumbered section with an according entry in the table
+of contents.
+
+## I want to customize the template to my needs, what to do? 
+
+No problem, feel free to do so. Please take a look at the license
+of the class file.
+*Disclaimer: Once again, basic LaTeX knowledge is needed.*
+
+### I want to change the title page?
 
 Do so. A good guide can be found in the
 [LaTeX-Wikibook](https://en.wikibooks.org/wiki/LaTeX/Title_Creation)
 
 
-## I want to change the predefined abstract/declaration/etc. page?
+### I want to change the predefined abstract/declaration/etc. page?
 
 Don't bother redefining class definitions. Just do what you would
 do if you would not use the class.
 
+## I want to change how chapter titles look.
+
+A few commands are available to change the appearance of chapter
+titles.
+
+`\abovechapterskip` The spacing above the chapter  
+`\chapterbelowskip` The spacing below the chapter  
+`\chapterinbetweenskip` The spacing between  the chapter lines  
+`\chapteralign` Alignment of the chapter  
+`chapterfont` The font of the chapter  
+`chapterprefixfont` The font of the chapter prefix  
+`\autodot`   
+`\mdtChapapp`  
+
+If you don't know how to customize the output yourself, have a
+look at the support section below. 
+
+If you need more than the given features, have a look at package
+`titlesec`.
+
+## Often asked questions
+
+### Occasional blank pages appearing?
+
+As MDT relies on `book`, it defaults to chapters starting on
+right hand pages only. You can change the behaviour by adding the
+global option `openany`. Please also have a look at `oneside`
+explained above.
+
+### The margins of my thesis are changing back and forth.
+
+This is normal for books which are printed that left and right
+hand pages are full of content. Maybe you want a `oneside`
+document? Please read about it above.
 
 ## Where do i get support? 
 
 Standard location for class support is LaTeX-community.org.
 Remember to give a detailed description of what is not working. 
+
+----
+
+<sup>1</sup> A bit useful material:
+- [lshort – A short introduction to LaTeX](http://ctan.org/pkg/lshort)
+- [LaTeX for complete novices](http://www.dickimaw-books.com/latex/novices/index.html)
+- [Using LaTeX to  writ a PhD-thesis](http://www.dickimaw-books.com/latex/thesis/index.html)
