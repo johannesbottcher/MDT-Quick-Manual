@@ -36,7 +36,7 @@ Constants* and  *List of Symbols* if you should decide to really
 use them. You don't have to. Packages like `acro` or `glossaries`
 can give you much more power.
 
-- `nolistspacing`
+- `nolistspacing`    
 Package `setspace` is used by the template, so you can set the
 spacing to `singlespacing` (default), `onehalfspacing` or
 `doublespacing` if you need it. Option `nolistspacing` keeps the
@@ -63,14 +63,14 @@ options are some of them.
 A few commands are available to change the appearance of chapter
 titles.
 
-`\abovechapterskip` The spacing above the chapter
-`\chapterbelowskip` The spacing below the chapter
-`\chapterinbetweenskip` The spacing between  the chapter lines
-`\chapteralign` Alignment of the chapter
-`chapterfont` The font of the chapter
-`chapterprefixfont` The font of the chapter prefix
-`\autodot` 
-`\mdtChapapp`
+`\abovechapterskip` The spacing above the chapter  
+`\chapterbelowskip` The spacing below the chapter  
+`\chapterinbetweenskip` The spacing between  the chapter lines  
+`\chapteralign` Alignment of the chapter  
+`chapterfont` The font of the chapter  
+`chapterprefixfont` The font of the chapter prefix  
+`\autodot`   
+`\mdtChapapp`  
 
 If you don't know how to customize the output yourself, have a
 look at the support section below. 
