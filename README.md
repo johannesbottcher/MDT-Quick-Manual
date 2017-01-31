@@ -165,8 +165,16 @@ document? Please read about it above.
 
 ## Where do i get support? 
 
-Standard location for class support is LaTeX-community.org.
-Remember to give a detailed description of what is not working. 
+Standard location for template support is LaTeX-community.org.
+Remember to give a detailed description (miinimal working
+example)of what is not working. 
+
+## Where do i report a bug?
+
+Standard location for template support is LaTeX-community.org.
+Remember to give a detailed description (miinimal working
+example)of what is not working. 
+
 
 ----
 
