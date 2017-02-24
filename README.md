@@ -104,12 +104,12 @@ KOMA-script documentation.
 
 ## Dealing with unnumbered chapters and sections
 
-The template provides `addchap*{The title of your unnumbered
+The template provides `\addchap*{The title of your unnumbered
 chapter}` to typeset unnumbered chapters. If you want an
-additional entry in the table of contents, remove the asterisk.  
-The same mechanism is provided for sections: `\addsec{Title}`
-adds an unnumbered section with an according entry in the table
-of contents.
+additional entry in the table of contents and properly set
+headers, remove the asterisk.  The same mechanism is provided for
+sections: `\addsec{Title}` adds an unnumbered section with an
+according entry in the table of contents.
 
 ## I want to customize the template to my needs, what to do? 
 
