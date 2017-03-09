@@ -71,7 +71,9 @@ default.
 - `english` or `ngerman` is passed down to package `babel`.
   `babel` takes care of proper hyphenation. The language you use
 also changes predefined strings (for example *Contents* in
-english and *Inhaltsverzeichnis* in german).
+english and *Inhaltsverzeichnis* in german). You can use any
+langauge known to babel, but might need to add strings for the
+language you are using. 
 
 - `oneside` is one of the options of standard LaTeX classes. The
   default for the book class is typesetting in `twoside` mode,
@@ -123,10 +125,31 @@ Do so. A good guide can be found in the
 [LaTeX-Wikibook](https://en.wikibooks.org/wiki/LaTeX/Title_Creation)
 
 
-### I want to change the predefined abstract/declaration/etc. page?
+### I want to change the layout of predefined abstract/declaration/etc. page?
 
 Don't bother redefining class definitions. Just do what you would
 do if you would not use the class.
+
+
+## I want a different language.
+
+Add the babel langauge you want to need in the global options.
+You need to add some language strings yourself, for example: 
+
+```language=latex
+\providecaptionname{spanish}{\abbrevname}{Lista de Abreviaciones}
+\providecaptionname{dutch}{\acknowledgementname}{Dank}
+```
+
+Strings you can change:
+`\abbrevname` (List of Abbreviations)
+`\byname` (by in the abstract)
+`\abstractname` (Abstract)
+`\acknowledgementname` (Acknowledgements)
+`\authorshipname` (Declaration of Authorship)
+`\constantsname` (Physical Constants)
+`\symbolsname` (List of Symbols)
+
 
 ## I want to change how chapter titles look.
 
