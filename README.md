@@ -142,13 +142,13 @@ You need to add some language strings yourself, for example:
 ```
 
 Strings you can change:
-`\abbrevname` (List of Abbreviations)
-`\byname` (by in the abstract)
-`\abstractname` (Abstract)
-`\acknowledgementname` (Acknowledgements)
-`\authorshipname` (Declaration of Authorship)
-`\constantsname` (Physical Constants)
-`\symbolsname` (List of Symbols)
+`\abbrevname` (List of Abbreviations)  
+`\byname` (by in the abstract)  
+`\abstractname` (Abstract)  
+`\acknowledgementname` (Acknowledgements)  
+`\authorshipname` (Declaration of Authorship)  
+`\constantsname` (Physical Constants)  
+`\symbolsname` (List of Symbols)  
 
 
 ## I want to change how chapter titles look.
