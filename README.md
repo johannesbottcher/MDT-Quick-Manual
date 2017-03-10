@@ -188,8 +188,18 @@ document? Please read about it above.
 
 ### I don't get a bibliography
 
-You have to press the BibTeX button in your editor. After process
-finished, you need to recreate once more.
+You have to press the BibTeX button in your editor. After the
+process finished, you need to recreate the pdf once more.
+
+If that wasn't enough to help you create the bibliography, please
+read [Bold citation key instead of citation
+number](http://tex.stackexchange.com/questions/63852/question-mark-or-bold-citation-key-instead-of-citation-number).
+
+You can use the file
+[bibTest](https://github.com/johannesbottcher/MDT-Quick-Manual/blob/master/bibTest.tex)
+as a working test case.  
+Hint: `wombat` will always be undefined
+
 
 ## Where do i get support? 
 
