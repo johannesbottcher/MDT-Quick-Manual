@@ -141,7 +141,7 @@ You need to add some language strings yourself, for example:
 \providecaptionname{dutch}{\acknowledgementname}{Dank}
 ```
 
-Strings you can change:
+Strings you can change:  
 `\abbrevname` (List of Abbreviations)  
 `\byname` (by in the abstract)  
 `\abstractname` (Abstract)  
@@ -185,6 +185,11 @@ explained above.
 This is normal for books which are printed that left and right
 hand pages are full of content. Maybe you want a `oneside`
 document? Please read about it above.
+
+### I don't get a bibliography
+
+You have to press the BibTeX button in your editor. After process
+finished, you need to recreate once more.
 
 ## Where do i get support? 
 
