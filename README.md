@@ -133,7 +133,7 @@ do if you would not use the class.
 
 ## I want a different language.
 
-Add the babel langauge you want to need in the global options.
+Add the babel language you want to need in the global options.
 You need to add some language strings yourself, for example: 
 
 ```language=latex
@@ -176,7 +176,7 @@ If you need more than the given features, have a look at package
 ### Occasional blank pages appearing?
 
 As MDT relies on `book`, it defaults to chapters starting on
-right hand pages only. You can change the behaviour by adding the
+right hand pages only. You can change the behavior by adding the
 global option `openany`. Please also have a look at `oneside`
 explained above.
 
@@ -200,18 +200,28 @@ You can use the file
 as a working test case.  
 Hint: `wombat` will always be undefined
 
+### The title of the abstract is at the bottom and the content on
+the next page
+
+The abstract is flushed to the bottom om the page. If you don't
+want that, you can use `\begin{abstract}[]` (note the empty pair
+of brackets). 
+
+Note: This will not happen with the `consistentlayout`  option.
+
+Hint: Abstracts should be reasonably short. 
 
 ## Where do i get support? 
 
 Standard location for template support is LaTeX-community.org.
-Remember to give a detailed description (miinimal working
-example)of what is not working. 
+Remember to give a detailed description (minimal working
+example) of what is not working. 
 
 ## Where do i report a bug?
 
 Standard location for template support is LaTeX-community.org.
-Remember to give a detailed description (miinimal working
-example)of what is not working. 
+Remember to give a detailed description (minimal working
+example) of what is not working. 
 
 
 ----
