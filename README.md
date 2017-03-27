@@ -200,8 +200,7 @@ You can use the file
 as a working test case.  
 Hint: `wombat` will always be undefined
 
-### The title of the abstract is at the bottom and the content on
-the next page
+### The title of the abstract is at the bottom and the content on the next page
 
 The abstract is flushed to the bottom om the page. If you don't
 want that, you can use `\begin{abstract}[]` (note the empty pair
