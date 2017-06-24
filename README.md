@@ -173,6 +173,23 @@ If you need more than the given features, have a look at package
 
 ## Often asked questions
 
+### How to change the colors of hyperlinks?
+
+Hyperlinks are useful within pdfs. They are coloured by default.
+If you want to omit the color, use `\hypersetup{allcolors=.}` or
+`\hypersetup{hidelinks}`.
+
+If you want the links to be visible in the pdf only, use
+`\hypersetup{colorlinks=false}`. The boxes you see in the pdf
+won't be printed on paper.
+
+If you want to change the colors of links individually, you can
+do the following:
+
+`\hypersetup{urlcolor=red}`, or  
+`\hypersetup{citecolor=green}`, or  
+`\hypersetup{allcolor=blue}`
+
 ### Occasional blank pages appearing?
 
 As MDT relies on `book`, it defaults to chapters starting on
@@ -212,13 +229,13 @@ Hint: Abstracts should be reasonably short.
 
 ## Where do i get support? 
 
-Standard location for template support is LaTeX-community.org.
+Standard location for template support is [LaTeX.org](http://latex.org/forum/)
 Remember to give a detailed description (minimal working
 example) of what is not working. 
 
 ## Where do i report a bug?
 
-Standard location for template support is LaTeX-community.org.
+Standard location for template support is [LaTeX.org](http://latex.org/forum/)
 Remember to give a detailed description (minimal working
 example) of what is not working. 
 
