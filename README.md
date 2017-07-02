@@ -91,7 +91,10 @@ to make the according changes.
 
 Modern package `biblatex` is used to do the bibliography. If you
 need, for some reason, to use the older `natbib` package, feel
-free to do so.
+free to do so. The backend is set to use `BibTeX` to sort the
+bibliography. Modern tool `biber` has more features and can
+handle scripts with accents better. As soon as you have accents
+in your bibliography, consider switching to `biber`.
 
 Package `caption` is used to define the captions of tables and
 figures.
