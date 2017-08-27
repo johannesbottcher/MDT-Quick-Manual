@@ -1,7 +1,7 @@
 # Masters-Doctoral-Thesis-Template -- unofficial usage guide
 
 A bit of information about the Masters-Doctoral-Thesis-Template
-(from now on called MDT), version 2.4 (2016/11/22).  
+(from now on called MDT), version 2.5 (2017/08/27).  
  This is no official guide.
 
 ## What is this template? 
@@ -104,8 +104,19 @@ Package `geometry` is used to set the paper margins.
 Package `booktabs` is used for the example tables.
 
 Package `scrlayer-scrpage` is used to define the headers and
-footers. If you need to change them, have a look at the
-KOMA-script documentation.
+footers. 
+
+The template provides three different page styles by default,
+called `thesis` (page number in the outer header, chapter/section
+marks at the inside header), `thesisSimple` (same as before, but
+only the chapter mark appears in the header) and `review`. The
+`review` page style adds the current date, the name of the author
+and the short title of the thesis to the footer of your thesis.
+If you have a messy professor, this can be helpful for him to
+review.
+
+If you need to change the material in the head and foot, have a look at the
+KOMA-script documentation.  
 
 ## Dealing with unnumbered chapters and sections
 
@@ -198,7 +209,16 @@ do the following:
 As MDT relies on `book`, it defaults to chapters starting on
 right hand pages only. You can change the behavior by adding the
 global option `openany`. Please also have a look at `oneside`
-explained above.
+explained above. If you want a header (or footer) on that pages,
+use `\setblankpagestyle{thesis}` or any other defined page style.
+
+### The header dissappears wheneer a new chapter starts.
+
+This is normal behaviour. The header is used by the reader for
+orientation. As the chapter title is usually pretty big, no
+header is needed. If you want a different page style for those
+pages, you can use `\setchapterpagestyle{<pagestyle>}`, where
+`<pagestyle>` is ay defined page style (see above).
 
 ### The margins of my thesis are changing back and forth.
 
