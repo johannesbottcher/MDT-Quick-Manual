@@ -89,12 +89,16 @@ Packages `inputenc` and `fontenc` are important when compiling
 with pdfTeX. If you need to compile with another engine, you need
 to make the according changes.
 
-Modern package `biblatex` is used to do the bibliography. If you
-need, for some reason, to use the older `natbib` package, feel
-free to do so. The backend is set to use `BibTeX` to sort the
-bibliography. Modern tool `biber` has more features and can
+Modern package `biblatex` is used to do the bibliography. You can
+split the bibliography if you want, you can also do a
+bibliography for every chapter.  
+If you need, for some reason, to use the older `natbib` package,
+feel free to do so.   
+The backend is set to use `BibTeX` to sort
+the bibliography. Modern tool `biber` has more features and can
 handle scripts with accents better. As soon as you have accents
-in your bibliography, consider switching to `biber`.
+in your bibliography, consider switching to `biber`
+(`backend=biber`).
 
 Package `caption` is used to define the captions of tables and
 figures.
